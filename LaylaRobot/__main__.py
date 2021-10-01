@@ -75,16 +75,16 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-──「 [Oda Nobunaga](https://telegra.ph/file/fa5805751e44608b1e162.png) 」──
+──「 [Aʟɪᴢᴀ Pʀᴏ Bᴏᴛ](https://telegra.ph/file/3b5233ce149044737b70b.png) 」──
 
 *Yoshaa! {},*
-*I'm Anime themed group management bot*
-I've some features for you :)
+*I'ᴍ Aʟɪᴢᴀ A PᴏᴡᴇʀFᴜʟʟ Aɴᴅ Aᴅᴠᴀɴᴄᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ꧂*
+I'ᴠᴇ Sᴏᴍᴇ Fᴇᴀᴛᴜʀᴇs Fᴏʀ Yᴏᴜ :)
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* `{}`
 • `{}` *users, across* `{}` *chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Find the list of available commands with /help ××
+£ Fɪɴᴅ Tʜᴇ Lɪsᴛ Oғ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs Wɪᴛʜ /help ××
 """
 
 buttons = [
@@ -101,9 +101,9 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="✯ Anime Group ✯", url=f"https://t.me/Grup_Anime_Chat"
+            text="✯ Aliza Group ✯", url=f"https://t.me/MISTY_SUPORTER"
         ),
-        InlineKeyboardButton(text="✯ Channnel ✯", url=f"https://t.me/userlazyxbot"),
+        InlineKeyboardButton(text="✯ Channnel ✯", url=f"https://t.me/MISTY_SUPORT"),
     ],
     [
         InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
@@ -112,16 +112,16 @@ buttons = [
 
 HELP_STRINGS = """
 *Main* commands available:
-*I'm Maintained By* @RxyMX 
-Bug Report to @OdaSupport[.](https://telegra.ph/file/f8b3ba005b0a685048ba2.jpg)
+*I'm Maintained By* @XD_LIF 
+Bug Report to @MISTY_SUPORTER [.](https://telegra.ph/file/971b25172425d517f8518.jpg)
  ➛ /help: PM's you this message.
  ➛ /help <module name>: PM's you info about that module.
  ➛ /settings:
    ❂ in PM: will send you your settings for all supported modules.
    ❂ in a group: will redirect you to pm, with all that chat's settings."""
 
-LAYLA_IMG = "https://telegra.ph/file/fa5805751e44608b1e162.png"
-ODA_IMG = "https://telegra.ph/file/ffe156089bcb0eb0bf239.jpg"
+LAYLA_IMG = "https://telegra.ph/file/971b25172425d517f8518.jpg"
+ODA_IMG = "https://telegra.ph/file/3b5233ce149044737b70b.jpg"
 
 DONATE_STRING = """I'm Free For Everyone"""
 
@@ -382,7 +382,7 @@ def layla_about_callback(update, context):
     query = update.callback_query
     if query.data == "layla_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Oda Nobunaga*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Aliza*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -390,11 +390,11 @@ def layla_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_Oda's licensed under the GNU General Public License v3.0_
-                 \n❍ UserLazy Projects @UserLazyXBot
-                 \n❍ Support Group @OdaSupport
-                 \n❍ Assistant @OdaHelper.
-                 \nHere is the [Author](https://t.me/RxyMX).
-                 \n\nIf you have any question about Oda, let us know at .""",
+                 \n❍ UserLazy Projects @L0VEXWORLD
+                 \n❍ Support Group @MISTY_SUPORTER
+                 \n❍ Assistant @Aliza_Assistant.
+                 \nHere is the [HEENA](https://t.me/HEENAXD).
+                 \n\nIf you have any question about Aliza, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -416,8 +416,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Oda*
-                 \nHere is the [Author](https://github.com/UserLazy) .""",
+            text=""" Hi..🤗 I'm *Aliza*
+                 \nHere is the [Queen](https://t.me/HEENAXD) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -661,7 +661,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 2006394040 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
